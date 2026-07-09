@@ -110,9 +110,7 @@ The design is structured as a classic **datapath + control unit** (Moore FSM) pa
 - **Datapath** — registers for the header (K, S, coefficients), the sliding window of samples required by the convolution, the running accumulator for `∑Cj · f[j+i]`, and the saturation stage.
 - **Memory interface** — read/write access to the external single-port block RAM instantiated in the test bench.
 
-<p align="center">
-  <img src="assets/architecture.png" alt="Datapath + control unit block diagram" width="720"/>
-</p>
+
 
 Design highlights:
 
